@@ -17,11 +17,27 @@ namespace AssignmentProjectN00001.Controllers
             return 1;
         }
 
-        //GET : localhost:xx/api/integer/5 => 5
+
+
+
+        /// <summary>
+        /// Divides a number by 2. Truncates the result
+        /// </summary>
+        /// <param name="id">The number to divide</param>
+        /// <returns>the input number divided by 2</returns>
+        /// <example>
+        /// GET : localhost:xx/api/integer/-11 => -5
+        /// </example>
+        /// <example>
+        /// GET : localhost:xx/api/integer/10 => 5
+        /// </example>
+        /// <example>
+        /// GET : localhost:xx/api/integer/2 => 1
+        /// </example>
         public int Get(int id)
         {
-
-            return id;
+            int result = id / 2;
+            return result;
         }
 
 

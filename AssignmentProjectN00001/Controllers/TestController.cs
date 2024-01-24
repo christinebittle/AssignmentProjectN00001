@@ -10,12 +10,21 @@ namespace AssignmentProjectN00001.Controllers
     public class TestController : ApiController
     {
 
-        //GOAL: 
-        //GET localhost:xx/api/test/christine -> "Hello christine"
 
+        /// <summary>
+        /// Creates a greeting message for a person
+        /// </summary>
+        /// <param name="id">the name of the person to greet</param>
+        /// <returns>Hello {name}!</returns>
+        /// <example>
+        /// GET: localhost:xx/api/test/christine => "Hello christine!"
+        /// </example>
+        /// <example>
+        /// GET: localhost:xx/api/test/Sean => "Hello Sean!"
+        /// </example>
         public string Get(string id) 
         {
-            string message = "Hello " + id;
+            string message = "Hello " + id+"!";
             return message;
         }
 
